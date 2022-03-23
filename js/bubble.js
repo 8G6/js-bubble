@@ -38,7 +38,7 @@ class bubble{
                 y-=y_k
             }
             else{
-                bool_y = 1
+                bool_y = this.y_speed
                 y+=y_k
             }
         }
