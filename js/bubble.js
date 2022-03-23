@@ -47,5 +47,6 @@ class bubble{
     }
     animate = () =>{
         let i=0;
+        this.
     }
 }
