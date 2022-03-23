@@ -104,7 +104,8 @@ class Bubble{
             $(`#bubble-${i}`).style.boxShadow = `inset ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_x}px 
                                                        ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_x}px 
                                                        ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_y}px 
-                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_x}px ${this.color}`
+                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_x}px 
+                                                       ${this.color}`
         }
         this.c++
         if(this.c%this.timeout==0 && this.randomColor){
