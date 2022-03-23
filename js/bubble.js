@@ -45,7 +45,7 @@ class Bubble{
         this.sizes        = []
         this.c            = 0
         this.color        = '#ffffff'
-        this.randomColor 
+        this.randomColor  = 
     }
     path = (i,randSpeeds)=>{
         if(this.x[i]>=0 && this.x[i]<=this.max_x-this.x_offset && this.bool_x[i]) this.x[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.x_speed
