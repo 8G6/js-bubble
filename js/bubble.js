@@ -59,7 +59,7 @@ class bubble{
             this.parent.appendChild(div)
         }
         for(i=0;i<this.bubble_count;i++){
-            let this.x[i]=0,y[i]=0;
+            lthis.x[i]=0,this.y[i]=0;
             for(let j=0;j<this.bubble_count;j++){{
                 [x,y]=this.path(x,y,j)
                 div.style.left = `${x}px`
