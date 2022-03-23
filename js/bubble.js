@@ -55,6 +55,7 @@ class bubble{
             div.className = 'bubble'
             div.style.width  = `${y}px`
             div.style.height = `${y}px`
+            this.
         }
     }
 }
