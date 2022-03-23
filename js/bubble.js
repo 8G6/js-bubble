@@ -23,8 +23,8 @@ class bubble{
         this.randSizes    = range(2,150,6)
         this.x            = Array(this.bubble_count).fill(0)
         this.y            = Array(this.bubble_count).fill(0)
-        this.x_poss       = range(0,this.max_x,500)
-        this.y_poss       = range(0,this.max_y,500)
+        this.x_poss       = range(0,this.max_x,2)
+        this.y_poss       = range(0,this.max_y,2)
         this.size         = 200
         this.y_offset     = 2
         this.x_offset     = 100
