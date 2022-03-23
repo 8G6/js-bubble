@@ -50,7 +50,7 @@ class bubble{
         return [x,y]
     }
     animate = (timeout) =>{
-        
+
         this.parent.classList.toggle('bg')
         let i=0,div,y=0;
         for(i=0;i<this.bubble_count;i++){
@@ -65,7 +65,7 @@ class bubble{
             this.x[i]=0
             this.y[i]=0;
             for(let j=0;j<this.bubble_count;j++){{
-                [x,y]=this.path(x,y,j)
+                [x[i],y[i]]=this.path(x,y,j)
                 div.style.left = `${x}px`
                 div.style.top  = `${y}px`
             }
