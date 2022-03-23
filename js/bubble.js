@@ -21,7 +21,7 @@ class bubble{
         this.randSpeed    = false
         this.randSize     = false
         this.randSizes    = range(2,150,2)
-        this.x            = []
+        this.x            = Array(this.bubble_count).fill(1)
         this.y            = []
     }
     path = (x,y,i)=>{
