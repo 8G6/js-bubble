@@ -66,7 +66,7 @@ class bubble{
         }
     }
     start = (timeout) =>{
-
+        setInterval(this.animate,timeout)
     }
 }
 
