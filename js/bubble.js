@@ -58,6 +58,7 @@ class bubble{
             div.style.height = `${y}px`
             this.parent.appendChild(div)
         }
+        for(i=0;i<)
     }
 }
 
