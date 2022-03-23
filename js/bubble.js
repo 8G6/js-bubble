@@ -49,7 +49,8 @@ class bubble{
         }
         return [x,y]
     }
-    animate = () =>{
+    animate = (timeout) =>{
+        
         this.parent.classList.toggle('bg')
         let i=0,div,y=0;
         for(i=0;i<this.bubble_count;i++){
