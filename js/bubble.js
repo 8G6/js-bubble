@@ -60,7 +60,7 @@ class bubble{
         }
         for(i=0;i<this.bubble_count;i++){
             let x=0,y=0;
-            for()
+            for(let j=0;j<this.bubble_count;j++){
             [x,y]=this.path(x,y,i)
             div.style.left = `${x}px`
             div.style.top  = `${y}px`
