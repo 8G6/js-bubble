@@ -61,4 +61,4 @@ class bubble{
     }
 }
 
-let b = new bubble()
+let b = new bubble('main',4,)
