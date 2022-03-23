@@ -32,7 +32,7 @@ class bubble{
             this.x[i]+=this.x[i]_k
         }
     }
-    if(this.y[i]>=0 && this.y[i]<=mathis.x[i]_this.y[i]-0  && bool_this.y[i]) this.y[i]+=this.y[i]_k
+    if(this.y[i]>=0 && this.y[i]<=mathis.x[i]_this.y[i]-0  && bool_this.y[i]) this.y[i]+=this.y[i]
     else{
         if(this.y[i]>=0){
             bool_this.y[i] = 0
