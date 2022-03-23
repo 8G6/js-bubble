@@ -19,7 +19,7 @@ class bubble{
         this.members_x    = range(0,this.max_x,x_speed)
         this.members_y    = range(0,this.max_y,y_speed)
     }
-    path = (x,y,)=>{
+    path = (x,y,x)=>{
 
         if(x>=0 && x<=this.max_x-0 && bool_x) x+=x_k
         else{
