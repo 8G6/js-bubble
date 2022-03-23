@@ -39,11 +39,11 @@ class Bubble{
         this.x_poss         = range(0,this.max_x,2)
         this.y_poss         = range(0,this.max_y,2)
         this.size           = 200
-        this.y_offset     = 2
-        this.x_offset     = 100
-        this.timeout      = 15
-        this.sizes        = []
-        this.c            = 0
+        this.y_offset       = 2
+        this.x_offset       = 100
+        this.timeout        = 15
+        this.sizes          = []
+        this.c              = 0
         this.colorSatIndex = 
         this.color        = '#ffffff'
         this.randomColor  = false
