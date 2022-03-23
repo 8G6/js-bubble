@@ -26,7 +26,7 @@ class bubble{
         else{
             if(x>=0){
                 bool_x = 0
-                this.x[i]-=this.randSpeed ? : this.x_speed
+                this.x[i]-=this.randSpeed ? rand(): this.x_speed
             }
             else{
                 bool_x = 1
