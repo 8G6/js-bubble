@@ -111,7 +111,7 @@ class Bubble{
                                                        ${this.color}`
         }
         this.c++
-        if(this.c%this.timeout==0 && this.randColor){
+        if(this.c%this.randColorSpeed==0 && this.randColor){
             this.color = randomColor()
         }
 
