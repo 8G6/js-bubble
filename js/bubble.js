@@ -64,7 +64,7 @@ class bubble{
         for(i=0;i<this.bubble_count;i++){
             this.x[i]=0
             this.y[i]=0;
-            [x[i],y[i]]
+            [x[i],y[i]] = 
         }
     }
     start = (timeout) =>{
