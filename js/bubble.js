@@ -34,7 +34,7 @@ class bubble{
         if(this.y[i]>=0 && this.y[i]<=this.max_y-0  && this.bool_y[i]) this.y[i]+=y_k
         else{
             if(y>=0){
-                bool_y = 0
+                bool_y = this.y_speed
                 y-=y_k
             }
             else{
