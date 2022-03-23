@@ -58,7 +58,12 @@ class bubble{
             div.style.height = `${y}px`
             this.parent.appendChild(div)
         }
-        for(i=0;i<)
+        for(i=0;i<this.bubble_count;i++){
+            let x=0,y=0;
+            [x,y]=this.path(x,y,i)
+            div.style.left = `${x}px`
+            div.style.top  = `${y}px`
+        }
     }
 }
 
