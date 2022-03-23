@@ -22,6 +22,6 @@ body{
   position: absolute;
   box-shadow: inset 10px 10px 10px white;
   backdrop-filter: blur(102px);
-  background-color: rgba(240, 248, 248, 0.05);
+  background-color: rgba(240, 248, 248, 0.01);
 }
   
