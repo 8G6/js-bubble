@@ -106,7 +106,7 @@ class Bubble{
                                                       ${0.5*this.sizes[i]*this.y[i]/this.max_x}px ${this.color}`
         }
         this.c++
-        if(this.c%this.timeout==0){
+        if(this.c%this.timeout==0 && this.ra){
             this.color = randomColor()
         }
         console.log(this.x,this.y)
