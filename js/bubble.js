@@ -117,7 +117,7 @@ class Bubble{
 
     }
     start = (timeout=this.timeout) =>{
-        this.randColorSpeed * 10
+        this.randColorSpeed * 
         this.init()
         setInterval(this.animate,timeout)
     }
