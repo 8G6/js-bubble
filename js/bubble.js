@@ -47,6 +47,6 @@ class bubble{
     }
     animate = () =>{
         let i=0;
-        for(i=0;i<this.b)
+        for(i=0;i<this.bubble_count;i++)
     }
 }
