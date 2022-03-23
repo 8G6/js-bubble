@@ -7,7 +7,7 @@ let range = (start,end,step=1)  => {
         arr.push(i)
     return arr
 }
-class bubble{
+class Bubble{
     constructor(parent_id,bubble_count,x_speed=1,y_speed=1){
         this.parent       = $('#'+parent_id)
         this.bubble_count = bubble_count
