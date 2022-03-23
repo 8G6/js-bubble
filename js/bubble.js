@@ -77,7 +77,7 @@ class bubble{
         for(i=0;i<this.bubble_count;i++){
             [this.x[i],this.y[i]] = this.path(i,{
                 x:rand(this.randSpeeds.x),
-                y:t
+                y:rand(this.randSpeeds.x),
             })
             $(`#bubble-${i}`).style.left = `${this.x[i]}px`
             $(`#bubble-${i}`).style.top  = `${this.y[i]}px`
