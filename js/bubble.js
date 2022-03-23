@@ -100,7 +100,7 @@ class Bubble{
             $(`#bubble-${i}`).style.boxShadow = `inset ${0.5*this.sizes[i]*this.y[i]/this.max_x}px 
                                                       ${0.5*this.sizes[i]*this.x[i]/this.max_x}px 
                                                       ${0.5*this.sizes[i]*this.x[i]/this.max_y}px 
-                                                      ${0.5*this.sizes[i]*this.y[i]/this.max_x}px ${randomColor()}`
+                                                      ${0.5*this.sizes[i]*this.y[i]/this.max_x}px ${c}`
            
         }
         console.log(this.x,this.y)
