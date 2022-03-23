@@ -7,7 +7,7 @@ let range = (start,end,step=1)  => {
         arr.push(i)
     return arr
 }
-
+let 
 function toHex(strat,end){
     let arr=[];
     for(i=strat;i<end+1;i++){
