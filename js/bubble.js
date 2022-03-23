@@ -61,8 +61,8 @@ class bubble{
             div.style.height = `${y}px`
             this.parent.appendChild(div)
         }
-        
     }
+    
 }
 
 let b = new bubble('main',40)
