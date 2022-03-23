@@ -28,6 +28,7 @@ class Bubble{
         this.size         = 200
         this.y_offset     = 2
         this.x_offset     = 100
+        this.timeout      = 15
     }
     path = (i,randSpeeds)=>{
         if(this.x[i]>=0 && this.x[i]<=this.max_x-this.x_offset && this.bool_x[i]) this.x[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.x_speed
