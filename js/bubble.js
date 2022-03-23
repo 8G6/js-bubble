@@ -93,6 +93,6 @@ class bubble{
 let b = new bubble('main',52)
 b.randSpeed = 0
 b.y_speed = 5
-b.x
+b.x_speed = 7
 b.randSize=1
 b.start(10)
