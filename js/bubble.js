@@ -15,7 +15,7 @@ class Bubble{
         this.y_speed      = y_speed
         this.bubbles      = []
         this.init()
-    }
+
         this.bool_x       = Array(this.bubble_count).fill(1)
         this.bool_y       = Array(this.bubble_count).fill(1)
         this.max_x        = screen.width
