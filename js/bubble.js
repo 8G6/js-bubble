@@ -46,6 +46,6 @@ class bubble{
         return [x,y]
     }
     animate = () =>{
-        
+        let i=0;
     }
 }
