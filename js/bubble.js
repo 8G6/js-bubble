@@ -32,7 +32,7 @@ class bubble{
                 this.x[i]-=this.randSpeed ? rand(this.randSpeeds.x): this.x_speed
             }
             else{
-                bool_x = 1
+                this.bool_y[i]
                 this.x[i]+=this.randSpeed ? rand(this.randSpeeds.x): this.x_speed
             }
         }
