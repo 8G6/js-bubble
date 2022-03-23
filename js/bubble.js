@@ -91,6 +91,7 @@ class bubble{
 }
 
 let b = new bubble('main',52)
-b.randSpeed = 1
+b.randSpeed = 0
+b.x
 b.randSize=1
 b.start(10)
