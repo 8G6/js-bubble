@@ -82,7 +82,7 @@ class Bubble{
             })
             $(`#bubble-${i}`).style.left = `${this.x[i]}px`
             $(`#bubble-${i}`).style.top  = `${this.y[i]}px`
-            $(`#bubble-${i}`).style.boxShadow = `inset ${y/max_x}px ${{this.x[i]/max_y}px ${x/max_y}px ${y/max_x}px white`
+            $(`#bubble-${i}`).style.boxShadow = `inset ${y/max_x}px ${{this.x[i]/this.max_y}px ${x/max_y}px ${y/max_x}px white`
         }
         console.log(this.x,this.y)
     }
