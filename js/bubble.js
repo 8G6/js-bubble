@@ -48,8 +48,7 @@ class bubble{
         return [x,y]
     }
     animate = (bubble) =>{
-        let i=0;
-        let div;
+        let i=0,div,y=0;
         for(i=0;i<this.bubble_count;i++){
             div=document.createElement('div');
             div.className = 'bubble'
