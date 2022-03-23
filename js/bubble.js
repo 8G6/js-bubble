@@ -65,7 +65,7 @@ class bubble{
         let i;
         for(i=0;i<this.bubble_count;i++){
             [this.x[i],this.y[i]] = this.path(this.x[i],this.y[i],i)
-            console.log(this.x,this.y[i])
+            console.log(this.x,this.y)
         }
     }
     start = (timeout) =>{
