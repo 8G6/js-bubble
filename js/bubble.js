@@ -53,8 +53,8 @@ class bubble{
             y=rand(this.randSizes)
             div=document.createElement('div');
             div.className = 'bubble'
-            div.style.width  = `${y*10}px`
-            div.style.height = `${y*10}px`
+            div.style.width  = `${y}px`
+            div.style.height = `${y}px`
         }
     }
 }
