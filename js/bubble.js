@@ -24,7 +24,7 @@ class bubble{
         else{
             if(x>=0){
                 bool_x = 0
-                x-=x_k
+                this.x[i]-=x_k
             }
             else{
                 bool_x = 1
