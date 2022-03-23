@@ -63,7 +63,7 @@ class bubble{
         }
     }
     start = (timeout) =>{
-
+        
     }
 }
 
