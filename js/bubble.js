@@ -32,7 +32,7 @@ class bubble{
                 x+=x_k
             }
         }
-        if(y>=0 && y<=max_y-0  && bool_y) y+=y_k
+        if(y>=0 && y<=this.max_y-0  && bool_y) y+=y_k
         else{
             if(y>=0){
                 bool_y = 0
