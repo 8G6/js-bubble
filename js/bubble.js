@@ -49,19 +49,12 @@ class bubble{
         }
         return [x,y]
     }
-    init = ()
+    init = ()=>{
+
+    }
     animate = (timeout) =>{
 
-        this.parent.classList.toggle('bg')
-        let i=0,div,y=0;
-        for(i=0;i<this.bubble_count;i++){
-            y=rand(this.randSizes)
-            div=document.createElement('div');
-            div.className = 'bubble'
-            div.style.width  = `${y}px`
-            div.style.height = `${y}px`
-            this.parent.appendChild(div)
-        }
+        
         for(i=0;i<this.bubble_count;i++){
             [x[i],y[i]] = this.path(this.x[i],this.y[i],i)
             console.log(x[i],y[i])
