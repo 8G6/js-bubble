@@ -48,7 +48,7 @@ class Bubble{
         this.color          = '#ffffff'
         this.randomColor    = false
     }
-    path = (i,randSpeeds)=>{
+    physics = (i,randSpeeds)=>{
         if(this.x[i]>=0 && this.x[i]<=this.max_x-this.x_offset && this.bool_x[i]) this.x[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.x_speed
         else{
             if(this.x[i]>=this.x_offset){
