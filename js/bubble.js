@@ -54,6 +54,7 @@ class bubble{
             div=document.createElement('div');
             div.className = 'bubble'
             div.style.height = `${y}px`
+            div.style.height = `${y}px`
         }
     }
 }
