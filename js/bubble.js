@@ -72,5 +72,5 @@ class bubble{
     }
 }
 
-let b = new bubble('main',40)
+let b = new bubble('main',5)
 b.animate()
