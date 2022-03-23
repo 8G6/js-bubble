@@ -22,7 +22,7 @@ body{
   position: absolute;
   box-shadow: inset 10px 10px 10px white;
   backdrop-filter: blur(2px);
-  opacity: 0.5;
+  opacity: 0.9;
   background-color: rgba(240, 248, 248, 0.1);
 }
   
