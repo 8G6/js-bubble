@@ -62,7 +62,6 @@ class bubble{
             div.id        = `bubble-${i}`
             div.style.width  = `${y}px`
             div.style.height = `${y}px`
-            this.parent.appendChild(div)
             this.x[i] = rand(this.x_poss)
             this.y[i] = rand(this.y_poss)
         }
