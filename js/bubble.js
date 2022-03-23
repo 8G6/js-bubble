@@ -49,6 +49,7 @@ class bubble{
         }
         return [x,y]
     }
+    init = ()
     animate = (timeout) =>{
 
         this.parent.classList.toggle('bg')
