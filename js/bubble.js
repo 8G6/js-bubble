@@ -44,7 +44,7 @@ class bubble{
             }
             else{
                 bool_y = 
-                y+=y_k
+                y+=this.randSpeed ? rand(this.randSpeeds.y): this.x_speed
             }
         }
         return [x,y]
