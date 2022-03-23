@@ -53,7 +53,7 @@ class bubble{
         for(i=0;i<this.bubble_count;i++){
             div=document.createElement('div');
             div.className = 'bubble'
-            div.style.
+            div.style.height = 
         }
     }
 }
