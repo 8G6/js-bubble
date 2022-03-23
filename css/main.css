@@ -13,7 +13,7 @@ body{
   overflow-x: hidden;
 }
 
-#dev{
+.bublle{
   position: absolute;
   top: 0%;
   width: 20%;
