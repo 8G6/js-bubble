@@ -47,7 +47,7 @@ class bubble{
         }
         return [x,y]
     }
-    animate = () =>{
+    animate = (bubble) =>{
         let i=0;
         let div;
         for(i=0;i<this.bubble_count;i++){
