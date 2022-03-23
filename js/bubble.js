@@ -75,3 +75,4 @@ class bubble{
 }
 
 let b = new bubble('main',40)
+b.animate()
