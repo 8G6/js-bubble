@@ -19,5 +19,30 @@ class bubble{
         this.members_x    = range(0,this.max_x,x_speed)
         this.members_y    = range(0,this.max_y,y_speed)
     }
-    x
+    path = function get(x,y,x_k,y_k){
+
+        if(x>=0 && x<=max_x-0 && bool_x) x+=x_k
+        else{
+            if(x>=0){
+                bool_x = 0
+                x-=x_k
+            }
+            else{
+                bool_x = 1
+                x+=x_k
+            }
+        }
+        if(y>=0 && y<=max_y-0  && bool_y) y+=y_k
+        else{
+            if(y>=0){
+                bool_y = 0
+                y-=y_k
+            }
+            else{
+                bool_y = 1
+                y+=y_k
+            }
+        }
+        return [x,y]
+    }
 }
