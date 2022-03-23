@@ -73,6 +73,7 @@ class bubble{
         let i;
         for(i=0;i<this.bubble_count;i++){
             [this.x[i],this.y[i]] = this.path(this.x[i],this.y[i],i)
+            $(`#bubble-${i}`).style.left = `${this.x[i]}px`
         }
         console.log(this.x,this.y)
     }
