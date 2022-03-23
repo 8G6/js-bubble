@@ -99,18 +99,9 @@ class Bubble{
         for(i=0;i<this.bubble_count;i++){
             [this.x[i],this.y[i]] = this.physics(i,{
                 x:rand(this.randSpeeds.x),
-                y:rand(this.randSpeeds.y)
-            })
-            $(`#bubble-${i}`).style.left = `${this.x[i]}px`
-            $(`#bubble-${i}`).style.top  = `${this.y[i]}px`
-            $(`#bubble-${i}`).style.boxShadow = `inset ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_x}px 
-                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_x}px 
-                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_y}px 
-                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_x}px 
-                                                       ${this.color}`
-        }
+      
         this.c++
-        if(this.c%this.timeout==0 && this.randomColor){
+        if(this.c%this.timeout==0 && this.randColor){
             this.color = randomColor()
         }
 
@@ -121,3 +112,13 @@ class Bubble{
     }
 }
 
+          y:rand(this.randSpeeds.y)
+            })
+            $(`#bubble-${i}`).style.left = `${this.x[i]}px`
+            $(`#bubble-${i}`).style.top  = `${this.y[i]}px`
+            $(`#bubble-${i}`).style.boxShadow = `inset ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_x}px 
+                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_x}px 
+                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_y}px 
+                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_x}px 
+                                                       ${this.color}`
+        }
