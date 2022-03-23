@@ -45,3 +45,4 @@ class bubble{
     }
     return [this.x[i],this.y[i]]
 }
+}
