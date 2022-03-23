@@ -24,7 +24,7 @@ class bubble{
         else{
             if(x>=0){
                 bool_x = 0
-                this.x[i]-=x_k
+                this.x[i]-=this.x_speed
             }
             else{
                 bool_x = 1
