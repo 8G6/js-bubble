@@ -25,7 +25,7 @@ class bubble{
         this.y            = Array(this.bubble_count).fill(0)
         this.x_poss       = range(0,this.max_x,100)
         this.y_poss       = range(0,this.max_y,100)
-        this.size         = 2
+        this.size         = 200
         this.y_offset     = 2
         this.x_offset     = 100
     }
