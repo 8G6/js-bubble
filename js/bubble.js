@@ -28,7 +28,7 @@ class bubble{
             }
             else{
                 bool_x = 1
-                x+=x_k
+                this.x[i]+=x_k
             }
         }
         if(y>=0 && y<=max_y-0  && bool_y) y+=y_k
