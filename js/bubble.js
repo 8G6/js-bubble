@@ -21,7 +21,8 @@ class bubble{
         this.randSpeed    = false
         this.randSize     = false
         this.randSizes    = range(2,150,2)
-        this.x[i]
+        this.x            = []
+        
     }
     path = (x,y,i)=>{
         if(this.x[i]>=0 && this.x[i]<=this.max_x-0 && bool_x) this.x[i]+=x_k
