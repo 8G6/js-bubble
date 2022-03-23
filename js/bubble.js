@@ -112,7 +112,7 @@ class Bubble{
         if(this.c%this.timeout==0 && this.randomColor){
             this.color = randomColor()
         }
-        console.log(this.x,this.y)
+
     }
     start = (timeout=this.timeout) =>{
         this.init()
