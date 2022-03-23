@@ -65,6 +65,7 @@ class bubble{
             this.x[i] = rand(this.x_poss)
             this.y[i] = rand(this.y_poss)
             div.style.left = `${this.x[i]}px`
+            div.style.left = `${this.x[i]}px`
             this.parent.appendChild(div)
         }
     }
