@@ -10,7 +10,7 @@ let range = (start,end,step=1)  => {
 class bubble{
     constructor(parent_id,bubble_count,x_speed=1,y_speed=1){
         this.parent       = $('#'+parent_id)
-        this.childern     = 
+        this.childern     = $()
         this.bubble_count = bubble_count
         this.bool_x       = Array(this.bubble_count).fill(1)
         this.bool_y       = Array(this.bubble_count).fill(1)
@@ -46,5 +46,5 @@ class bubble{
         }
         return [x,y]
     }
-    
+
 }
