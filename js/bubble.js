@@ -61,7 +61,7 @@ class bubble{
             this.parent.appendChild(div)
         }
     }
-    animate = (timeout) =>{
+    animate = () =>{
 
         
         for(i=0;i<this.bubble_count;i++){
