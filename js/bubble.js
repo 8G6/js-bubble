@@ -62,7 +62,7 @@ class bubble{
             this.parent.appendChild(div)
         }
     }
-    
+    start =
 }
 
 let b = new bubble('main',40)
