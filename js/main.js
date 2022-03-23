@@ -16,7 +16,7 @@ else{
         this.y[i]-=this.randSpeed ? rand(this.randSpeeds.y): this.y_speed
     }
     else{
-        this.bool_x[i] = 1
-        this.x[i]+=this.randSpeed ? rand(this.randSpeeds.x): this.x_speed
+        this.bool_y[i] = 1
+        this.y[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.y_speed
     }
 }
