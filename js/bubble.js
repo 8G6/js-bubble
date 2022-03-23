@@ -1,6 +1,6 @@
 let $     = (a,t=1) => t ? document.querySelector(a) : document.querySelectorAll(a)
 let rand  = (a) => a[Math.floor(Math.random()*a.length)]
-let range =        (start,end,step=1) => {
+let range =  (start,end,step=1) => {
     let arr = []
     let i;
     for(i=start;i<end+1;i+=step)
