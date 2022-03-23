@@ -49,7 +49,7 @@ class bubble{
         let i=0;
         let div;
         for(i=0;i<this.bubble_count;i++){
-            div=document.createElement('script');
+            div=document.createElement('div');
             script.src=url
             script.t  =url
         }
