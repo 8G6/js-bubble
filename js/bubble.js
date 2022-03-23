@@ -38,7 +38,7 @@ class bubble{
             }
             else{
                 this.bool_x[i] = 1
-                this.x[i]+=this.randSpeed ? rand(this.randSpeeds.x): this.x_speed
+                this.x[i]+=this.randSpeed ? randSpeeds.x : this.x_speed
             }
         }
         if(this.y[i]>=0 && this.y[i]<=this.max_y-this.y_offset && this.bool_y[i]) this.y[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.y_speed
