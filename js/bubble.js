@@ -8,7 +8,7 @@ let range = (start,end,step=1)  => {
     return arr
 }
 class Bubble{
-    constructor(parent_id,bubble_count,x_speed=1,y_speed=1){
+    constructor(parent_id,bubble_count=10,x_speed=1,y_speed=1){
         this.parent       = $('#'+parent_id)
         this.bubble_count = bubble_count>500 ? alert('500<=bubble_count') : bubble_count
         this.bool_x       = Array(this.bubble_count).fill(1)
