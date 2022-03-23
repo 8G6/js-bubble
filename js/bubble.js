@@ -16,7 +16,7 @@ class bubble{
         this.bool_y       = Array(this.bubble_count).fill(1)
         this.max_x        = document.body.scrollWidth
         this.max_y        = document.body.scrollHeight
-        this.x_speed      = range(0,this.max_x,)
+        this.x_speed      = x_speed
         this.y_speed      = range(0,this.max_y,)
     }
     path = (x,y,i)=>{
