@@ -21,7 +21,7 @@ class bubble{
     }
     path = (x,y)=>{
 
-        if(x>=0 && x<=max_x-0 && bool_x) x+=x_k
+        if(x>=0 && x<=this.max_x-0 && bool_x) x+=x_k
         else{
             if(x>=0){
                 bool_x = 0
