@@ -20,7 +20,7 @@ class bubble{
         this.y_speed      = y_speed
     }
     path = (x,y,i)=>{
-        if(x>=0 && x<=max_x-0 && bool_x) x+=x_k
+        if(this.x[i]>=0 && x<=max_x-0 && bool_x) x+=x_k
         else{
             if(x>=0){
                 bool_x = 0
