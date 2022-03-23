@@ -105,7 +105,7 @@ class Bubble{
         }
         this.c++
         if(this.c%this.timeout==0){
-            
+            this.color = randomColor()
         }
         console.log(this.x,this.y)
     }
