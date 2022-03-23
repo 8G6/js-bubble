@@ -70,7 +70,7 @@ class bubble{
     }
     start = (timeout) =>{
         this.init()
-        setInterval(this.animate(),timeout)
+        setInterval(()=>this.animate(),timeout)
     }
 }
 
