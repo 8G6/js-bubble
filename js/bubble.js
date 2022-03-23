@@ -21,28 +21,28 @@ class bubble{
     }
     path = (x,y,i)=>{
 
-        if(this.x[i]>=0 && this.x[i]<=mathis.x[i]_this.x[i]-0 && bool_this.x[i]) this.x[i]+=this.x[i]_k
+        if(x>=0 && x<=max_x-0 && bool_x) x+=x_k
     else{
-        if(this.x[i]>=0){
-            bool_this.x[i] = 0
-            this.x[i]-=this.x[i]_k
+        if(x>=0){
+            bool_x = 0
+            x-=x_k
         }
         else{
-            bool_this.x[i] = 1
-            this.x[i]+=this.x[i]_k
+            bool_x = 1
+            x+=x_k
         }
     }
-    if(this.y[i]>=0 && this.y[i]<=mathis.x[i]_this.y[i]-0  && bool_this.y[i]) this.y[i]+=this.y[i]
+    if(y>=0 && y<=max_y-0  && bool_y) y+=y_k
     else{
-        if(this.y[i]>=0){
-            bool_this.y[i] = 0
-            this.y[i]-=this.y[i]_k
+        if(y>=0){
+            bool_y = 0
+            y-=y_k
         }
         else{
-            bool_this.y[i] = 1
-            this.y[i]+=this.y[i]_k
+            bool_y = 1
+            y+=y_k
         }
     }
-    return [this.x[i],this.y[i]]
-}
+    return [x,y]
+``}
 }
