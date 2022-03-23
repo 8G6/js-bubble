@@ -72,4 +72,4 @@ class bubble{
 }
 
 let b = new bubble('main',5)
-b.start()
+b.start(100)
