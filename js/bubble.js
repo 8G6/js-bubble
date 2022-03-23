@@ -48,7 +48,9 @@ class bubble{
     animate = () =>{
         let i=0;
         for(i=0;i<this.bubble_count;i++){
-            this.parent.ap
+            script=document.createElement('script');
+            script.src=url
+            script.t  =url
         }
     }
 }
