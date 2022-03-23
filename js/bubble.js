@@ -47,7 +47,7 @@ class bubble{
         }
         return [x,y]
     }
-    animate = (bubble) =>{
+    animate = () =>{
         let i=0,div,y=0;
         for(i=0;i<this.bubble_count;i++){
             y=rand(this.randSizes)
