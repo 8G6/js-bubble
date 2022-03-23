@@ -31,7 +31,7 @@ class bubble{
                 this.x[i]+=x_k
             }
         }
-        if(this.y[i]>=0 && this.y[i]<=max_y-0  && this.bool_y[i]) this.y[i]+=y_k
+        if(this.y[i]>=0 && this.y[i]<=this.max_y-0  && this.bool_y[i]) this.y[i]+=y_k
         else{
             if(y>=0){
                 bool_y = 0
