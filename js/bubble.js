@@ -82,6 +82,7 @@ class Bubble{
             })
             $(`#bubble-${i}`).style.left = `${this.x[i]}px`
             $(`#bubble-${i}`).style.top  = `${this.y[i]}px`
+            $(`#bubble-${i}`).style.top  = `${this.y[i]}px`
         }
         console.log(this.x,this.y)
     }
