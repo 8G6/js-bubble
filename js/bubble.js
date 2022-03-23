@@ -90,9 +90,3 @@ class bubble{
     }
 }
 
-let b = new bubble('main',10)
-b.randSpeed = 0
-b.y_speed = 5
-b.x_speed = 10
-b.randSize=1
-b.start(10)
