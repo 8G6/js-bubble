@@ -30,13 +30,13 @@ class bubble{
             }
             else{
                 bool_x = 1
-                this.x[i]+=this.x_speed
+                this.x[i]+=this.randSpeed ? rand(this.randSpeeds.x): this.x_speed
             }
         }
         if(this.y[i]>=0 && this.y[i]<=this.max_y-0  && this.bool_y[i]) this.y[i]+=y_k
         else{
             if(y>=0){
-                bool_y = this.y_speed
+                bool_y = this.randSpeed ? rand(this.randSpeeds.x): this.x_speed
                 y-=y_k
             }
             else{
