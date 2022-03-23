@@ -57,7 +57,7 @@ class bubble{
         this.parent.classList.toggle('bg')
         let i=0,div,y=0;
         for(i=0;i<this.bubble_count;i++){
-            y= rand(this.randSizes)
+            y= this.randSize ?  rand(this.randSizes)
             div=document.createElement('div');
             div.className = 'bubble'
             div.id        = `bubble-${i}`
