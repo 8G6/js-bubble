@@ -45,7 +45,7 @@ class bubble{
         else{
             if(this.y[i]>=this.y_offset){
                 this.bool_y[i] = 0
-                this.y[i]-=this.randSpeed ? rand(this.randSpeeds.y): this.y_speed
+                this.y[i]-=this.randSpeed ? randSpeeds.y : this.y_speed
             }
             else{
                 this.bool_y[i] = 1
