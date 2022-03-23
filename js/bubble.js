@@ -61,7 +61,7 @@ class bubble{
             div.style.width  = `${y}px`
             div.style.height = `${y}px`
             this.parent.appendChild(div)
-            this.x[i] = 
+            this.x[i] = rand(range(0,this.max_x))
         }
     }
     animate = () =>{
