@@ -44,7 +44,7 @@ class Bubble{
         this.timeout        = 15
         this.sizes          = []
         this.c              = 0
-        this.colorSatIndex  = 
+        this.colorSatIndex  = 25
         this.color          = '#ffffff'
         this.randomColor    = false
     }
