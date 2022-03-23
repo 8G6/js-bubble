@@ -64,8 +64,8 @@ class bubble{
     animate = () =>{
         let i;
         for(i=0;i<this.bubble_count;i++){
-            [this.x[i],y[i]] = this.path(this.x[i],this.y[i],i)
-            console.log(x[i],y[i])
+            [this.x[i],this.y[i]] = this.path(this.x[i],this.y[i],i)
+            console.log(this.[i],y[i])
         }
     }
     start = (timeout) =>{
