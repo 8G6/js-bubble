@@ -16,6 +16,10 @@ function toHex(strat,end){
     return arr
 }
 
+function randomColor(){
+    return '#'+rand(hex)+rand(hex)+rand(hex)
+}
+
 class Bubble{
     constructor(parent_id,bubble_count=10,x_speed=1,y_speed=1){
         this.parent       = $('#'+parent_id)
