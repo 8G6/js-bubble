@@ -48,7 +48,7 @@ class bubble{
         return [x,y]
     }
     animate = () =>{
-        $('.main').classList.toggle('bg')
+        this.parent.classList.toggle('bg')
         let i=0,div,y=0;
         for(i=0;i<this.bubble_count;i++){
             y=rand(this.randSizes)
