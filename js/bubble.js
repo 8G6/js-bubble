@@ -88,4 +88,5 @@ class bubble{
 }
 
 let b = new bubble('main',5)
+b.ra
 b.start(1)
