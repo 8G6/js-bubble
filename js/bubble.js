@@ -17,7 +17,7 @@ class bubble{
         this.max_y        = screen.height
         this.x_speed      = x_speed
         this.y_speed      = y_speed
-        this.randSpeeds   = {x:range(1,5),y:range(1,3)}
+        this.randSpeeds   = {x:range(1,3),y:range(1,3)}
         this.randSpeed    = false
         this.randSize     = false
         this.randSizes    = range(2,150,6)
