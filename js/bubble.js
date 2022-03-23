@@ -25,7 +25,7 @@ class bubble{
         this.y            = Array(this.bubble_count).fill(0)
         this.x_poss       = range(0,this.max_x,100)
         this.y_poss       = range(0,this.max_y,100)
-        this.size         = 
+        this.size         = 100
     }
     path = (x,y,i)=>{
         if(this.x[i]>=0 && this.x[i]<=this.max_x-0 && this.bool_x[i]) this.x[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.x_speed
