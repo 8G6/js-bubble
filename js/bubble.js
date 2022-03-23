@@ -61,3 +61,4 @@ class bubble{
     }
 }
 
+let b = new bubble()
