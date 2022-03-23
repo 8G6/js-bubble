@@ -71,6 +71,7 @@ class bubble{
     }
     animate = () =>{
         let i;
+        let 
         for(i=0;i<this.bubble_count;i++){
             [this.x[i],this.y[i]] = this.path(this.x[i],this.y[i],i)
         }
