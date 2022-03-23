@@ -22,7 +22,7 @@ function randomColor(){
 
 class Bubble{
     constructor(parent_id,bubble_count=10,x_speed=1,y_speed=1){
-        this.parent       = $('#'+parent_id)
+        this.parent         = $('#'+parent_id)
         this.bubble_count = bubble_count>500 ? alert('500<=bubble_count') : bubble_count
         this.bool_x       = Array(this.bubble_count).fill(1)
         this.bool_y       = Array(this.bubble_count).fill(1)
