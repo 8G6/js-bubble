@@ -46,7 +46,7 @@ class bubble{
                 this.bool_y[i] = 1
                 this.y[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.y_speed
             }
-}
+        }
 
         return [this.x[i],this.y[i]]
     }
