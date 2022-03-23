@@ -88,5 +88,5 @@ class bubble{
 }
 
 let b = new bubble('main',5)
-b.randSpeed = true
+b.randSpeed = 0
 b.start(1)
