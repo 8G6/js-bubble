@@ -7,6 +7,15 @@ let range = (start,end,step=1)  => {
         arr.push(i)
     return arr
 }
+
+function toHex(strat,end){
+    let arr=[];
+    for(i=strat;i<end+1;i++){
+        arr.push(i.toString(16))
+    }
+    return arr
+}
+
 class Bubble{
     constructor(parent_id,bubble_count=10,x_speed=1,y_speed=1){
         this.parent       = $('#'+parent_id)
