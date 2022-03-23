@@ -47,7 +47,7 @@ class bubble{
                 y+= this.randSpeed ? rand(this.randSpeeds.y): this.x_speed
             }
         }
-        return [this.x[i],y[i]]
+        return [this.x[i],this.y[i]]
     }
     init = ()=>{
         this.parent.classList.toggle('bg')
