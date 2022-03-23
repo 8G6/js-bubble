@@ -19,6 +19,7 @@ class bubble{
         this.y_speed      = y_speed
         this.randSpeeds   = {x:range(1,15),y:range(1,15)}
         this.randSpeed    = false
+        this.randSize     = false
         this.rand 
     }
     path = (x,y,i)=>{
