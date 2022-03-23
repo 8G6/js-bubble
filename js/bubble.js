@@ -23,22 +23,22 @@ function randomColor(){
 class Bubble{
     constructor(parent_id,bubble_count=10,x_speed=1,y_speed=1){
         this.parent         = $('#'+parent_id)
-        this.bubble_count = bubble_count>500 ? alert('500<=bubble_count') : bubble_count
-        this.bool_x       = Array(this.bubble_count).fill(1)
-        this.bool_y       = Array(this.bubble_count).fill(1)
-        this.max_x        = screen.width
-        this.max_y        = screen.height
-        this.x_speed      = x_speed
-        this.y_speed      = y_speed
-        this.randSpeeds   = {x:range(1,7),y:range(1,7)}
-        this.randSpeed    = false
-        this.randSize     = false
-        this.randSizes    = range(60,350,6)
-        this.x            = Array(this.bubble_count).fill(0)
-        this.y            = Array(this.bubble_count).fill(0)
-        this.x_poss       = range(0,this.max_x,2)
-        this.y_poss       = range(0,this.max_y,2)
-        this.size         = 200
+        this.bubble_count   = bubble_count>500 ? alert('500<=bubble_count') : bubble_count
+        this.bool_x         = Array(this.bubble_count).fill(1)
+        this.bool_y         = Array(this.bubble_count).fill(1)
+        this.max_x          = screen.width
+        this.max_y          = screen.height
+        this.x_speed        = x_speed
+        this.y_speed        = y_speed
+        this.randSpeeds     = {x:range(1,7),y:range(1,7)}
+        this.randSpeed      = false
+        this.randSize       = false
+        this.randSizes      = range(60,350,6)
+        this.x              = Array(this.bubble_count).fill(0)
+        this.y              = Array(this.bubble_count).fill(0)
+        this.x_poss         = range(0,this.max_x,2)
+        this.y_poss         = range(0,this.max_y,2)
+        this.size           = 200
         this.y_offset     = 2
         this.x_offset     = 100
         this.timeout      = 15
