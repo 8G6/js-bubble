@@ -1,4 +1,4 @@
-let $ = (a) => document.querySelector(a)
+let $ = (a,) => document.querySelector(a)
 let rand  = (a) => a[Math.floor(Math.random()*a.length)]
 let range = (start,end,step=1) => {
     let arr = []
