@@ -10,7 +10,12 @@ let range = (start,end,step=1)  => {
 class Bubble{
     constructor(parent_id,bubble_count,x_speed=1,y_speed=1){
         this.parent       = $('#'+parent_id)
-        this.bubble_count = bubble_count>500 ? alert('Max limit') 
+        this.bubble_count = bubble_count>500 ? alert('Max limit') : bubble_count
+        this.x_speed      = x_speed
+        this.y_speed      = y_speed
+        this.bubbles      = []
+        this.init()
+    }
         this.bool_x       = Array(this.bubble_count).fill(1)
         this.bool_y       = Array(this.bubble_count).fill(1)
         this.max_x        = screen.width
