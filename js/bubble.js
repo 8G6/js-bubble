@@ -104,8 +104,8 @@ class Bubble{
                                                       ${0.5*this.sizes[i]*this.y[i]/this.max_x}px ${c}`
         }
         this.c++
-        if(this.c%this.timeout){
-
+        if(this.c%this.timeout==0){
+            
         }
         console.log(this.x,this.y)
     }
