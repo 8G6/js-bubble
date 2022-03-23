@@ -84,5 +84,5 @@ class bubble{
     }
 }
 
-let b = new bubble('main',5)
+let b = new bubble('main',50)
 b.start(10)
