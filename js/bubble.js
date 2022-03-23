@@ -117,7 +117,7 @@ class Bubble{
 
     }
     start = (timeout=this.timeout) =>{
-        this.randColorSpeed = parseInt(this.randColorSpeed * (1-(1/((this.max_x+this.max_y)/2)))
+        this.randColorSpeed = parseInt(this.randColorSpeed * (1-(1/((this.max_x+this.max_y)/2))))
         this.init()
         setInterval(this.animate,timeout)
     }
