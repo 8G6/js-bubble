@@ -45,5 +45,7 @@ class bubble{
         }
         return [x,y]
     }
-    ani
+    animate = () =>{
+        
+    }
 }
