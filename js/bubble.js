@@ -57,7 +57,7 @@ class bubble{
             y=rand(this.randSizes)
             div=document.createElement('div');
             div.className = 'bubble'
-            div.i
+            div.id        = ``
             div.style.width  = `${y}px`
             div.style.height = `${y}px`
             this.parent.appendChild(div)
