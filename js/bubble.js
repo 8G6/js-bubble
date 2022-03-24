@@ -50,10 +50,11 @@ class Bubble{
         this.randSpeeds         = {x:range(1,7),y:range(1,7)}
         this.randSpeed          = false
         this.randSize           = false
-        this.randSizeLim.strat  = 50
-        this.randSizeLim.end    = 50
-        this.randSizeLim.step   = 50
-        this.randSizes          = range(this.randSizeLim.start,this.randSizeLim.end,this.randSizeLim.step)
+        this.randSizeLim        = {}
+        this.randSizeLim.start  = 10
+        this.randSizeLim.end    = 320
+        this.randSizeLim.step   = 10
+        this.randSizes          = []
         this.x                  = Array(this.bubble_count).fill(0)
         this.y                  = Array(this.bubble_count).fill(0)
         this.x_poss             = range(0,this.max_x,2)
@@ -99,6 +100,7 @@ class Bubble{
     }
     init = ()=>{
         this.randSizes      = range(this.randSizeLim.start,this.randSizeLim.end,this.randSizeLim.step)
+        console.log(this.randSizeLim.start,this.randSizeLim.end,this.randSizeLim.step)
         this.parent.classList.toggle('bg')
         let i=0,div,y=0;
         for(i=0;i<this.bubble_count;i++){
@@ -146,3 +148,5 @@ class Bubble{
 }
 
 
+let x = [-100,100,20]
+let y = [3032,19,1216]
