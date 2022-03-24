@@ -65,7 +65,7 @@ class Bubble{
         this.times              = []
         this.interval           = null
     }
-    
+
     physics = (i,randSpeeds)=>{
         if(this.x[i]>=0 && this.x[i]<=this.max_x-this.x_offset && this.bool_x[i]) this.x[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.x_speed
         else{
@@ -107,8 +107,6 @@ class Bubble{
                 overflow-y: hidden;
                 overflow-x: hidden;
             }
-        `)
-        createStyle(`
             .bubble{
                 position: absolute;
                 top: 0%;
@@ -122,6 +120,9 @@ class Bubble{
                 filter: saturate(10px);
                 filter: contrast(1000px);
             }
+        `)
+        createStyle(`
+            
         `)
         this.randSizes      = range(this.randSizeLim.start,this.randSizeLim.end,this.randSizeLim.step)
         document.body.classList.toggle('bg')
