@@ -22,14 +22,6 @@ function predict(time){
     return rem
 }
 
-
-function createStyle(Class,s){
-    let style=document.createElement('style');
-    style.innerHTML = Class
-    style = style
-    document.head.appendChild(style)
-}
-
 class Bubble{
     constructor(parent_id,bubble_count=10,x_speed=1,y_speed=1){
         this.parent             = $('#'+parent_id)
@@ -94,9 +86,14 @@ class Bubble{
 
         return [this.x[i],this.y[i]]
     }
-
+    createStyle=(Class)=>{
+        let style=document.createElement('style');
+        style.innerHTML = Class
+        this.style      = style
+        document.head.appendChild(style)
+    }
     init = ()=>{
-        createStyle(`
+        this.createStyle(`
             .bg{
                 position: absolute;
                 top:0;
@@ -174,9 +171,9 @@ class Bubble{
 
     stop = ()=>{
         clearInterval(this.interval)
-        document.head.removeChild(this.style)
         document.body.classList.toggle('bg')
         this.parent.classList.toggle('bg')
         this.parent.innerHTML = ''
+        this.style.innerHTML  = ''
     }
 }
