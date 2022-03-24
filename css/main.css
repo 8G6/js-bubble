@@ -19,10 +19,11 @@ body{
   transform: translate(-50%,-50%);
   border-radius: 90%;
   left: 50%;
-  position: absolute;
-  box-shadow: inset 10px 10px 10px white;
   backdrop-filter: blur(2px);
-  opacity: 0.7;
-  background-color: rgba(240, 248, 248, 0.01);
+  opacity: 0.85;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+  filter: saturate(10px);
+  filter: contrast(1000px);
 }
   

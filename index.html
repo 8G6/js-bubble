@@ -12,18 +12,19 @@
     </div>
     <script src="./js/bubble.js"></script>
     <script>
-        let bubble = new Bubble('main',100)
-        
-        bubble.randSizeLim.start = 10
-        bubble.randSizeLim.end = 100
-        bubble.randSizeLim.step = 7
-        bubble.randSize = 1
-        bubble.y_speed = 5
-        bubble.colorSatIndex = 50
-        bubble.randSpeed = 0
-        bubble.randColor = true
-        bubble.randColorSpeed = 10
-        bubble.start(50)
+        let bubble = new Bubble('main',25)
+        bubble.randSizeLim.start = 50
+        bubble.randSizeLim.end = 200
+        bubble.randSizeLim.step = 50
+        bubble.size     = 70
+        bubble.x_speed = 7.5
+        bubble.y_speed = 7.9
+        bubble.colorSatIndex =10
+        bubble.randSpeed = 1
+        bubble.randColor = 1
+        bubble.randColorDelay = 10
+        bubble.start()
     </script>
 </body>
 </html>
+

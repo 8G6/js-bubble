@@ -16,8 +16,17 @@ function toHex(strat,end){
     return arr
 }
 
+function predict(time){
+    let rem = 0,i;
+    let coff = [-3.0657942138772067e-16, 1.729228857368293e-12, -4.0042396582245056e-9, 0.000004916003504282592, -0.003409059861779712, 1.2970163652633955, 18.175382805593483]
+    for(i=0;i<coff.length;i++){
+        rem+=coff[i] * time ** (coff.length-i-1)
+    }
+    return rem
+}
+
 function randomColor(){
-    return '#'+rand(hex)+rand(hex)+rand(hex)
+    return '#'+rand(hex)+rand(hex)+rand(hex)+rand(hex)
 }
 
 class Bubble{
@@ -41,14 +50,16 @@ class Bubble{
         this.y_poss         = range(0,this.max_y,2)
         this.size           = 50
         this.y_offset       = 2
-        this.x_offset       = 100
+        this.x_offset       = 2
         this.timeout        = 15
         this.sizes          = []
         this.c              = 0
         this.colorSatIndex  = 25
-        this.color          = '#ffffff'
+        this.color          = '#ffffff2f'
         this.randColor      = false
-        this.randColorSpeed = 10
+        this.randColorDelay = 250
+        this.timeStart      = new Date().getTime()
+        this.times          = []
     }
     physics = (i,randSpeeds)=>{
         if(this.x[i]>=0 && this.x[i]<=this.max_x-this.x_offset && this.bool_x[i]) this.x[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.x_speed
@@ -104,22 +115,26 @@ class Bubble{
             })
             $(`#bubble-${i}`).style.left = `${this.x[i]}px`
             $(`#bubble-${i}`).style.top  = `${this.y[i]}px`
-            $(`#bubble-${i}`).style.boxShadow = `inset ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_x}px 
+            $(`#bubble-${i}`).style.boxShadow = `inset ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_y}px 
                                                        ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_x}px 
-                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_y}px 
-                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_x}px 
+                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_y}px 
+                                                       ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_x}px 
                                                        ${this.color}`
         }
         this.c++
         if(this.c%this.randColorSpeed==0 && this.randColor){
             this.color = randomColor()
+            this.times.push(-this.timeStart + new Date().getTime())
         }
-
     }
     start = (timeout=this.timeout) =>{
-        this.randColorSpeed = parseInt(this.randColorSpeed * (1-(1/((this.max_x+this.max_y)/2))))
+        this.randColorSpeed = parseInt(predict(this.randColorDelay))-18
+        console.log(this.randColorSpeed)
         this.init()
         setInterval(this.animate,timeout)
     }
 }
 
+
+let x = [-100,100,20]
+let y = [3032,19,1216]
