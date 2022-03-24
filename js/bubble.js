@@ -1,3 +1,11 @@
+/*////////////////////////////////////////////////////////////
+
+WRITTEN BY : 8G6
+LICENSE    : Apache License
+
+////////////////////////////////////////////////////////////*/
+
+
 let $     = (a,t=1)             => t ? document.querySelector(a) : document.querySelectorAll(a)
 let rand  = (a)                 => a[Math.floor(Math.random()*a.length)]
 let range = (start,end,step=1)  => {
