@@ -91,6 +91,7 @@ class Bubble{
 
         return [this.x[i],this.y[i]]
     }
+    
     init = ()=>{
         createStyle(`
             .bg{
@@ -140,6 +141,7 @@ class Bubble{
             this.parent.appendChild(div)
         }
     }
+
     animate = () =>{
         let i;
         for(i=0;i<this.bubble_count;i++){
@@ -168,7 +170,7 @@ class Bubble{
         this.init()
         this.interval=setInterval(this.animate,timeout)
     }
-    
+
     stop = ()=>{
         clearInterval(this.interval)
         document.body.classList.toggle('bg')
