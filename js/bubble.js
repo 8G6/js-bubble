@@ -50,7 +50,7 @@ class Bubble{
         this.randSpeeds     = {x:range(1,7),y:range(1,7)}
         this.randSpeed      = false
         this.randSize       = false
-        this.randSizes      = range(0,250,50)
+        this.randSizes      = range(25,250,50)
         this.x              = Array(this.bubble_count).fill(0)
         this.y              = Array(this.bubble_count).fill(0)
         this.x_poss         = range(0,this.max_x,2)
