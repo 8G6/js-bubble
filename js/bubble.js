@@ -123,7 +123,7 @@ class Bubble{
         `)
         this.randSizes      = range(this.randSizeLim.start,this.randSizeLim.end,this.randSizeLim.step)
         document.body.classList.toggle('bg')
-        this,this.parent.classList.toggle('bg')
+        this.parent.classList.toggle('bg')
         let i=0,div,y=0;
         for(i=0;i<this.bubble_count;i++){
             y= this.randSize ?  rand(this.randSizes) : this.size
