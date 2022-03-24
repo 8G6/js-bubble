@@ -121,9 +121,6 @@ class Bubble{
                 filter: contrast(1000px);
             }
         `)
-        createStyle(`
-            
-        `)
         this.randSizes      = range(this.randSizeLim.start,this.randSizeLim.end,this.randSizeLim.step)
         document.body.classList.toggle('bg')
         this,this.parent.classList.toggle('bg')
