@@ -56,7 +56,7 @@ class Bubble{
         this.randColorDelay     = 250
         this.timeStart          = new Date().getTime()
         this.times              = []
-        this.interval           = null
+        this.interval           = []
         this.style              = null
     }
 
@@ -166,14 +166,25 @@ class Bubble{
         this.randColorSpeed = parseInt(predict(this.randColorDelay))-18
         console.log(this.randColorSpeed)
         this.init()
-        this.interval=setInterval(this.animate,timeout)
+        this.interval.push(setInterval(this.animate,timeout))
     }
-
     stop = ()=>{
-        clearInterval(this.interval)
+        clearInterval(this.interval[0])
         document.body.classList.toggle('bg')
         this.parent.classList.toggle('bg')
         this.parent.innerHTML = ''
         this.style.innerHTML  = ''
     }
+    fadeOut = (delay)=>{
+        let i=1
+        this.interval.push(setInterval(() => {
+            this.parent.style.opacity = i
+            i-=(1/(delay/100))
+        }, 100))
+        setTimeout(()=>{
+            clearInterval(this.interval[1])
+            this.stop()
+        },delay)
+    }
+   
 }
