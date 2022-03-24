@@ -5,22 +5,11 @@ LICENSE    : GNU General Public License v3.0
 
 ////////////////////////////////////////////////////////////*/
 
-
-let $     = (a,t=1)             => t ? document.querySelector(a) : document.querySelectorAll(a)
-let rand  = (a)                 => a[Math.floor(Math.random()*a.length)]
 let range = (start,end,step=1)  => {
     let arr = []
     let i;
     for(i=start;i<end+1;i+=step)
         arr.push(i)
-    return arr
-}
-let hex = toHex(0,256)
-function toHex(strat,end){
-    let arr=[];
-    for(i=strat;i<end+1;i++){
-        arr.push(i.toString(16))
-    }
     return arr
 }
 
@@ -33,8 +22,11 @@ function predict(time){
     return rem
 }
 
-function randomColor(){
-    return '#'+rand(hex)+rand(hex)+rand(hex)+rand(hex)
+
+function createStyle(Class){
+    let style=document.createElement('style');
+    style.innerHTML = Class
+    document.head.appendChild(style)
 }
 
 class Bubble{
@@ -71,6 +63,7 @@ class Bubble{
         this.randColorDelay     = 250
         this.timeStart          = new Date().getTime()
         this.times              = []
+        this.interval           = null
     }
     physics = (i,randSpeeds)=>{
         if(this.x[i]>=0 && this.x[i]<=this.max_x-this.x_offset && this.bool_x[i]) this.x[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.x_speed
@@ -99,9 +92,38 @@ class Bubble{
         return [this.x[i],this.y[i]]
     }
     init = ()=>{
+        createStyle(`
+            .bg{
+                position: absolute;
+                top:0;
+                left:0;
+                filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#003073', endColorstr='#029797');
+                background-image: linear-gradient(135deg, #003073, #029797);
+                z-index:-99;
+                width: 100vw;
+                height: 100vh;
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+        `)
+        createStyle(`
+            .bubble{
+                position: absolute;
+                top: 0%;
+                transform: translate(-50%,-50%);
+                border-radius: 90%;
+                left: 50%;
+                backdrop-filter: blur(2px);
+                opacity: 0.85;
+                background-color: rgba(255, 255, 255, 0.05);
+                border: 1.5px solid white;
+                filter: saturate(10px);
+                filter: contrast(1000px);
+            }
+        `)
         this.randSizes      = range(this.randSizeLim.start,this.randSizeLim.end,this.randSizeLim.step)
-        console.log(this.randSizeLim.start,this.randSizeLim.end,this.randSizeLim.step)
-        this.parent.classList.toggle('bg')
+        document.body.classList.toggle('bg')
+        this,this.parent.classList.toggle('bg')
         let i=0,div,y=0;
         for(i=0;i<this.bubble_count;i++){
             y= this.randSize ?  rand(this.randSizes) : this.size
@@ -139,12 +161,18 @@ class Bubble{
             this.times.push(-this.timeStart + new Date().getTime())
         }
     }
+
     start = (timeout=this.timeout) =>{
         this.randColorSpeed = parseInt(predict(this.randColorDelay))-18
         console.log(this.randColorSpeed)
         this.init()
-        setInterval(this.animate,timeout)
+        this.interval=setInterval(this.animate,timeout)
+    }
+    
+    stop = ()=>{
+        clearInterval(this.interval)
+        document.body.classList.toggle('bg')
+        this.parent.classList.toggle('bg')
+        this.parent.innerHTML = ''
     }
 }
-
-
