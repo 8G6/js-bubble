@@ -26,6 +26,7 @@ function predict(time){
 function createStyle(Class,style){
     let style=document.createElement('style');
     style.innerHTML = Class
+    style = style
     document.head.appendChild(style)
 }
 
