@@ -51,7 +51,7 @@ class Bubble{
         this.randSpeed          = false
         this.randSize           = false
         this.randSizeLim.strat  = 50
-
+        this.randSizeLim.strat  = 50
         this.randSizes          = range(this.randSizeLim.start,this.randSizeLim.end,this.randSizeLim.step)
         this.x                  = Array(this.bubble_count).fill(0)
         this.y                  = Array(this.bubble_count).fill(0)
