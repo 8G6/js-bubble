@@ -51,13 +51,12 @@ class Bubble{
         this.sizes              = []
         this.c                  = 0
         this.colorSatIndex      = 25
-        this.color              = '#ffffff2f'
+        this.color              = ['#ffffff2f']
         this.randColor          = false
         this.randColorDelay     = 250
-        this.timeStart          = new Date().getTime()
-        this.times              = []
         this.interval           = []
         this.style              = null
+        this.colorSync          = false
     }
 
     physics = (i,randSpeeds)=>{
@@ -153,12 +152,14 @@ class Bubble{
                                                        ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_x}px 
                                                        ${(this.colorSatIndex/100)*this.sizes[i]*this.y[i]/this.max_y}px 
                                                        ${(this.colorSatIndex/100)*this.sizes[i]*this.x[i]/this.max_x}px 
-                                                       ${this.color}`
+                                                       ${this.color[this.colorSync ? 0 : i]}`
         }
         this.c++
         if(this.c%this.randColorSpeed==0 && this.randColor){
-            this.color = randomColor()
-            this.times.push(-this.timeStart + new Date().getTime())
+            this.color=[]
+            for(i=0;i<this.bubble_count;i++){
+                this.color.push(randomColor())
+            }
         }
     }
 
