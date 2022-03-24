@@ -65,6 +65,7 @@ class Bubble{
         this.times              = []
         this.interval           = null
     }
+    
     physics = (i,randSpeeds)=>{
         if(this.x[i]>=0 && this.x[i]<=this.max_x-this.x_offset && this.bool_x[i]) this.x[i]+=this.randSpeed ? rand(this.randSpeeds.y): this.x_speed
         else{
@@ -91,7 +92,7 @@ class Bubble{
 
         return [this.x[i],this.y[i]]
     }
-    
+
     init = ()=>{
         createStyle(`
             .bg{
